@@ -6,3 +6,24 @@
     z-index: 0;
 }
 
+.sun {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.hills {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.popup {
+    opacity: 90%;
+    background-color: rgb(77, 14, 14);
+}

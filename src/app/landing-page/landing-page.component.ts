@@ -1,4 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core'
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import * as Rellax from 'rellax'
 
 @Component({
@@ -14,7 +16,7 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
     }
     date : Date = new Date()
 
-     constructor() { }
+     constructor(private modalService: NgbModal) { }
 
     ngOnInit() {
         const body = document.getElementsByTagName('body')[0]
@@ -74,5 +76,9 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
         const navbar = document.getElementsByTagName('nav')[0]
         navbar.classList.remove('navbar-transparent')
     }
+
+    openWindowCustomClass(content) {
+          this.modalService.open(content, { windowClass: 'dark-modal' });
+        }
 }
 

@@ -1,5 +1,22 @@
 <div class="wrapper"  >
     <div class="page-header clear-filter">
+        <ng-template #content let-modal>
+            <div class="popup">
+              <div class="modal-header">
+              <h4 class="modal-title"style="text-white">Modal title</h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+            </div>  
+            </div>            
+          </ng-template>
+       
         <!-- <div data-rellax-speed="-8" class="rellax-header rellax-header-sky"
             style="transform: translate3d(0px, 0px, 0px); background-image: url('assets/img/darkspiral.jpg')">
             <div class="page-header-image"
@@ -14,12 +31,13 @@
             </div>
         </div> -->
 
-        <img src="/assets/img/spacehaze.png" class="haze-bg rellax">
-        <img src="/assets/img/sundoodlepng.png" class="sun rellax">
-        <img src="/assets/img/hills.png" class="hills rellax">
+        <img src="/assets/img/spacehaze.png" class="haze-bg rellax" data-rellax-speed="-8" style="transform: translate3d(0px, 0px, 0px);">
+        <img src="/assets/img/moonman.png" class="sun rellax" data-rellax-speed="7" style="transform: translate3d(0px, 20px, 0px);">
+        <img src="/assets/img/stars.png" class="stars rellax" data-rellax-speed="5" style="transform: translate3d(0px, 0px, 0px);">
+        <img src="/assets/img/horizon.png" class="hills rellax" data-rellax-speed="-10" style="transform: translate3d(0px, 0px, 0px);">
 
-        <div class="rellax-text-container rellax-text" style="transform: translate3d(0px, 6px, 0px);">
-            <h1 data-rellax-speed="-2" class="h1-seo">Paco</h1>
+        <div class="rellax-text-container rellax-text" style="transform: translate3d(150px, 6px, 0px);">
+            <h1 data-rellax-speed="-2" class="h1-seo">MoonMan</h1>
         </div>
         <h3 data-rellax-speed="-1" class="h3-description rellax-text" style="transform: translate3d(0px, 4px, 0px);">
             Software Development Portfolio</h3>
@@ -28,5 +46,8 @@
                 class="text-white"><i class="fa fa-github mr-2"></i></a><a
                 href="https://www.linkedin.com" target="_blank" class="text-white"><i
                     class="fa fa-linkedin ml-2"></i></a></h3>
-    </div>
+
+    </div>                    
+    <button class="btn btn-outline-primary mb-2 mr-2 popup" (click)="openWindowCustomClass(content)">X</button> -->
+
 </div>
