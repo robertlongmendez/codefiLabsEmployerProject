@@ -1,5 +1,6 @@
-import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core'
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { ChatModalComponent } from 'app/chat-modal/chat-modal.component';
 
 import * as Rellax from 'rellax'
 
@@ -78,7 +79,7 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
     }
 
     openWindowCustomClass(content) {
-          this.modalService.open(content, { windowClass: 'dark-modal' });
+          this.modalService.open(content);
         }
 }
 

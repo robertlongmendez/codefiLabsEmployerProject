@@ -13,7 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     declarations: [
         AppComponent,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
     ],
     imports: [
         BrowserAnimationsModule,
