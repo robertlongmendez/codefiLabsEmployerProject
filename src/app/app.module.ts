@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ChatModalComponent } from './chat-modal/chat-modal.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
         FooterComponent,
+        ChatModalComponent
     ],
     imports: [
         BrowserAnimationsModule,

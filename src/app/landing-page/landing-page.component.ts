@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-// import { ChatModalComponent } from 'app/chat-modal/chat-modal.component';
+import { ChatModalComponent } from 'app/chat-modal/chat-modal.component';
 
 import * as Rellax from 'rellax'
 
@@ -78,8 +78,12 @@ export class LandingPageComponent implements OnInit, OnDestroy, AfterViewInit {
         navbar.classList.remove('navbar-transparent')
     }
 
-    openWindowCustomClass(content) {
-          this.modalService.open(content);
+    // openWindowCustomClass(content) {
+    //       this.modalService.open(content);
+    //     }
+
+    openWindowCustomClass() {
+          this.modalService.open(ChatModalComponent);
         }
 }
 
